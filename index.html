@@ -17,7 +17,12 @@
 			<a class="title" href="#Hero">TrailOshell</a>
 			<!--<a class="title" href="index.html">TrailOshell</a>-->
 		</div>
-		<div id="desktop">
+		<div id="mobile">
+			<a href="javascript:void(0);" class="menu-button" onclick="navMenu()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		<div id="menu">
 			<ul>
 				<li><a href="#Section_1">About me</a></li>
 				<li><a href="#Section_2">Professions</a></li>
@@ -108,5 +113,16 @@
 	<footer>
 	</footer>
 </body>
+
+<script>
+	function navMenu() {
+  var x = document.getElementById("menu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
 </html>
